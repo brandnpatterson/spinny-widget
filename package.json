@@ -26,6 +26,7 @@
     "gulp-stylelint": "^7.0.0",
     "stylelint": "^9.1.1",
     "stylelint-config-sass-guidelines": "^5.0.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.6.0",
     "webpack-stream": "^4.0.2"
   },

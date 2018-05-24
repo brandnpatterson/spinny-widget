@@ -25,12 +25,7 @@ gulp.task('stylelint', () => {
 
 gulp.task('scripts', ['eslint'], () => {
     return gulp.src('./src/js/index.js')
-        .pipe(webpack({ 
-            devtool: 'source-map',
-            output: { 
-                filename: 'bundle.js' 
-            }
-        }))
+        .pipe(webpack(require('./webpack.config.js')))
         .pipe(gulp.dest('./public/'))
         .pipe(browserSync.stream());
 });
@@ -38,7 +33,7 @@ gulp.task('scripts', ['eslint'], () => {
 gulp.task('styles', ['stylelint'], () => {
     return gulp.src('./src/sass/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({ 
+        .pipe(sass({
             outputStyle: 'compressed' 
         }).on('error', sass.logError))
         .pipe(autoprefixer({ 
