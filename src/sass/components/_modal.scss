@@ -1,0 +1,21 @@
+.modal-content {
+  border-radius: 0 !important;
+  padding: 55px;
+}
+
+.modal-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 25px;
+  width: 95%;
+
+  h3 {
+    font-weight: bold;
+  }
+
+  .modal-image {
+    height: 65px;
+    width: 65px;
+  }
+}

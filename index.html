@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="public/style.css">
+    <title>Spinny Widget</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Spinny Widget
+                    </h1>
+                    <h2 class="subtitle">
+                        styled with
+                        <a href="https://bulma.io/">Bulma</a>
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <div class="spinny container">
+            <div class="animation-container">
+                <div class="animate-container-inner"></div>
+                <div class="animate animate-one">
+                    <h4>one</h4>
+                </div>
+                <div class="animate animate-two">
+                    <h4>two</h4>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-one">
+            <div class="modal-background"></div>
+            <div class="box modal-content modal-one-content">
+                <div class="modal-header">
+                    <h3>Modals by Bulma</h3>
+                </div>
+                <br/>
+                <p>
+                    This modal was built with
+                    <a href="https://bulma.io/">Bulma CSS</a>,
+                    an open source CSS framework based on Flexbox and used by more than 100,000 developers.
+                </p>
+                <a class="button is-medium" href="#">Okay</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <div class="modal modal-two">
+            <div class="modal-background"></div>
+            <div class="box modal-content modal-two-content">
+                <div class="modal-header">
+                    <h3>Buttons by Bulma</h3>
+                </div>
+                <br/>
+                <p>
+                    These fancy buttons are also built with
+                    <a href="https://bulma.io/">Bulma CSS</a>,
+                    an open source CSS framework based on Flexbox and used by more than 100,000 developers.
+                </p>
+                <a class="button is-medium" href="#">Okay</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </div>
+    <script type="text/javascript" src="public/bundle.js"></script>
+</body>
+</html>
